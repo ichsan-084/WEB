@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ichsan Putra Mahyuni - Personal Website</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Ichsanptra</div>
+                <div class="nav-links">
+                    <a href="#" class="active">Home</a>
+                    <a href="#about">About</a>
+                    <a href="Portopolio">Portopolio</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Hellow World, I'm<br>Ichsan Putra Mahyuni</h1>
+                    <p class="subtitle">Informatics student</p>
+                    <p>Welcome to My personal website</p>
+                </div>
+                <div class="hero-image">
+                    <img src="Gambar WhatsApp 2024-10-04 pukul 00.28.45_7ac1632b.jpg" alt="Ichsan Putra Mahyuni">
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <h2>About Me</h2>
+                <div class="about-content">
+                    <div class="about-image">
+                        <img src="Gambar WhatsApp 2024-10-04 pukul 00.28.45_7ac1632b.jpg" alt="Ichsan Putra Mahyuni">
+                    </div>
+                    <div class="about-text">
+                        <p>Hi everyone! Nama saya Ichsan Putra Mahyuni, mahasiswa Informatika semester 5 di Universitas Muhammadiyah Malang. Saya berasal dari Kalimantan Selatan. Saya sangat tertarik pada bidang piranti cerdas atau Internet of Things (IoT)</p>
+                        <p>Selain aktif dalam kegiatan akademik, saya juga terlibat di Himpunan Mahasiswa Tanah Bumbu Malang sebagai salah satu ketua bidang. Saya berharap dapat terus belajar dan berkontribusi dalam pengembangan solusi berbasis teknologi yang inovatif dan bermanfaat bagi masyarakat.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Ichsan Putra Mahyuni. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
